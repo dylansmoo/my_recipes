@@ -7,22 +7,35 @@
     <link rel="stylesheet" type="text/CSS" href="style.css">
 </head>
 <body>
-    <h1 id="head">My Favourite Recipes</h1>
-    <img src="images/squid-chef.jpg" alt="squid-chef" height="300" width="300">
+    <style>
+        .front {
+          will-change: transform;
+          transition: transform 250ms;
+        }
+      
+        .pushable:hover .front {
+          transform: translateY(-6px);
+        }
+        
+        .pushable:active .front {
+          transform: translateY(-2px);
+        }
+      </style>
+    <h1 id="head">My Favourite Recipes <img src="images/squid-chef.jpg" alt="squid-chef" id="img1"></h1>
 
-    <h4><a id="head1">Spicy Honey Garlic Chicken</a></h4>
-
-    <button id="button" onclick="href=recipes/spicy-honey-garlic-chicken.html"  target="_blank" rel="noopener noreferrer">View The Recipe</button> <br>
-    <img src="images/Spicy-Chicken.jpg" alt="spicy chkicken" height="200" width="200">
+    <h4 id="head1">Spicy Honey Garlic Chicken</h4>
+    <div class="but"><a href="recipes/spicy-honey-garlic-chicken.html"  target="_blank" rel="noopener noreferrer"><button class="pushable"><span class="front"> View The Recipe</span></button></a></div>
+    <img src="images/Spicy-Chicken.jpg" alt="spicy chkicken" id="img">
     
-    <h4><a href="recipes/pulled-pork-burgers.html" target="_blank" rel="noopener noreferrer" id="head1">Pulled Pork Burgers</a></h4>
-    <button id="button">View The Recipe</button> <br>
-    <img src="images/Pulled-Pork.jpg" alt="pulled pork burgers" height="200" width="auto">
-    <br>
-    <h4><a href="recipes/high-protein-oats.html" target="_blank" rel="noopener noreferrer" id="head1">High Protein Overnight Oats</a></h4>
-    <button id="button">View The Recipe</button> <br>
-    <img src="images/protein-oats.jpg" alt="high protein oats" height="200" width="auto">
-    <br>
+    <h4 id="head1">Pulled Pork Burgers</h4>
+    <div class="but"><a href="recipes/pulled-pork-burgers.html" target="_blank" rel="noopener noreferrer"><button class="pushable"><span class="front"> View The Recipe</span></button></a></div>
+    <img src="images/Pulled-Pork.jpg" alt="pulled pork burgers" id="img">
+    
+    <h4 id="head1">High Protein Overnight Oats</h4>
+    <div class="but"><a href="recipes/high-protein-oats.html" target="_blank" rel="noopener noreferrer"><button class="pushable"><span class="front"> View The Recipe</span></button></a></div>
+    <img src="images/protein-oats.jpg" alt="high protein oats" id="img">
+    
     <a href="#head">Return to top</a>
+    <!--recipes to add: banana choc chip muffins, pancakes-->
 </body>
 </html>
